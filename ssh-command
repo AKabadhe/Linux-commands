@@ -1,0 +1,11 @@
+
+
+cd /etc/ssh
+ls -l 
+nano sshd_config
+change port number
+semanage port -a -t ssh_port_t -p tcp 3232
+systemctl restart sshd
+systemctl status sshd
+
+e
